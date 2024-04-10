@@ -1,0 +1,115 @@
+.upload_container{
+  display: flex;
+  color: rgb(255, 255, 255);
+  border: 2px solid #ffffff;
+  border-radius: 10px;
+  overflow-y: auto;
+  margin: 90px;
+  backdrop-filter: blur(8px);
+  background-color: rgba(0, 0, 0, 0.5);
+  scroll-behavior: smooth;
+  flex-direction: column;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+  height: 600px;
+}
+
+.upload_container::-webkit-scrollbar{
+    display: none;
+}
+
+.uploadhead{
+    margin-left: 400px;
+    align-items: center;
+}
+.file_choose{
+    margin:20px auto;
+    display: flex;
+    justify-content: center;
+}
+.predict_btn{
+    border: 2px solid rgb(2, 168, 2);
+    padding: 5px 10px;
+    border-radius: 10px;
+    color: rgb(2, 168, 2);
+}
+.predict_btn:hover{
+    cursor: pointer;
+    background-color: rgb(2, 168, 2);
+    color: white;
+    transition: all 0.3s;
+}
+
+.uploaded_img{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+}
+.uploaded_img_head{
+    font-size: 28px;
+    font-weight:100;
+    align-items: center;
+}
+.uploaded_original_img{
+    width:40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.uploaded_original_img img{
+    height: 200px;
+}
+
+.blank_square {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200px;
+    height: 200px;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff; 
+  }
+
+.predicted_disease{
+    font-size: 16px; /* Adjust font size as needed */
+    margin-left: 10px;
+}
+
+.show{
+    display: flex;
+}
+.hidden{
+    display: hidden;
+}
+
+.information{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.soltuion{
+    margin-left: -10px;
+}
+
+.loading-spinner {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 5px solid #f3f3f3; /* Light grey */
+    border-top: 5px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite; /* Apply animation */
+  }
+
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
